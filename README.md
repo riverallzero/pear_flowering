@@ -1,17 +1,22 @@
 # Pear Flowering-date Prediction model
 
-![](https://github.com/riverallzero/pear_flowering/assets/93754504/c8a756ad-9bd2-4f7e-8994-c21e9aa878e3)
-
-신고 배 만개일 예측 모델(DVR, mDVR, CD)
+신고 배 만개일 예측 모델(DVR, mDVR, CD): [demo.ipynb](https://github.com/riverallzero/pear_flowering/blob/main/demo.ipynb)
 
 ```pip install git+https://github.com/riverallzero/pear_flowering.git```
 
 ```python
-from pear_flowering import dvr, mdvr, cd
+from pear_flowering import location, dvr, mdvr, cd
 
-dvr_result = dvr(year, loc) 
-mdvr_result = mdvr(year, loc) 
-cd_result = cd(year, loc) 
+# 지역번호 검색
+year = 2023
+loc = location("전주")
+
+# 개화일 예측
+dvr_result = dvr(year, loc)
+mdvr_result = mdvr(year, loc)
+cd_result = cd(year, loc)
+
+print(f"DVR: {dvr_result}, mDVR: {mdvr_result}, CD: {cd_result}")
 ```
 
 ## loc(지역번호)
