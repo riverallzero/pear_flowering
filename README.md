@@ -2,8 +2,11 @@
 
 신고 배 만개일 예측 모델(DVR, mDVR, CD): [demo.ipynb](https://github.com/riverallzero/pear_flowering/blob/main/demo.ipynb)
 
+## Usage
+### 1. install package
 ```pip install git+https://github.com/riverallzero/pear_flowering.git```
 
+### 2. using
 ```python
 from pear_flowering import location, dvr, mdvr, cd
 
@@ -19,7 +22,7 @@ cd_result = cd(year, loc)
 print(f"DVR: {dvr_result}, mDVR: {mdvr_result}, CD: {cd_result}")
 ```
 
-## loc(지역번호)
+## Location
 
 ```
 '90-속초', '93-북춘천', '95-철원', '98-동두천', '99-파주', '100-대관령', '101-춘천', '102-백령도', '104-북강릉', '105-강릉', '106-동해',
